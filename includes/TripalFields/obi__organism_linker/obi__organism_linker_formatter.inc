@@ -105,7 +105,6 @@ class obi__organism_linker_formatter extends ChadoFieldFormatter {
         $displayname .= " (${organism["common_name"]})";
       }
       $output = l($displayname, "bio_data/{$organism["entity_id"]}");
-      //$output = l("{$organism["abbreviation"]} ({$organism["common_name"]})", "bio_data/{$organism["entity_id"]}");
       $element[] = [
         '#type' => 'markup',
         '#markup' => $output,
